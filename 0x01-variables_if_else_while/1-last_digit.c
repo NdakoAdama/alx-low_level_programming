@@ -1,4 +1,5 @@
-#include <stdlib.h>                                   #include <time.h>
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
  * main - print last digit in random number
