@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print program that prints the alphabet in lowercase, followed by a new line
+ * main - program that prints the alphabet in lowercase,followed by a new line
  *
  * Description: print alphabets in lower case
  *
