@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * more headers goes there 
- * main - determine if number is positive or negative
- *
- * betty style doc for function main goes there
+* more headers goes there 
+*
+* main - determine if number is positive or negative
+* betty style doc for function main goes there
 */
 int main(void)
 {
