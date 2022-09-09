@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there 
+/**
+ * more headers goes there 
  * main - determine if number is positive or negative
  *
  * Description: program will assign a random number to the variable n each time
  * it is executed.
 * betty style doc for function main goes there
-*/ 
+*/
 int main(void)
 {
 	int n;
