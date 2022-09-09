@@ -2,7 +2,7 @@
 /**
  * main - prints the lowercase alphabet in reverse
  *
- * Descript:A program that prints the lowercase alphabet in reverse 
+ * Descript: prints the lowercase alphabet in reverse 
  * it is executed.
  * Return: Always 0 (Success)
  */
