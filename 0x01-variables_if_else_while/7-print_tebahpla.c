@@ -8,16 +8,11 @@
  */
 int main(void)
 {
-	int i = 0;
+	char low;
 
-	while (i < 48)
-	{
-		if (i < 10)
-			putchar(i + '0');
-		else if (i > 41)
-			putchar(i - 10 + 'A');
-		i++;
-		}
+	for (low = 'z'; low >= 'a'; low--)
+		putchar(low);
+	putchar('\n');
 
 	return (0);
 }
