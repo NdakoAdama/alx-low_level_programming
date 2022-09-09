@@ -4,5 +4,6 @@ A C program that prints alphabets in lowercase
 A C program that prints alphabets in lowercase and upoercase
 A C program that prints lowercase except e and q
 A program that print single digit numbers
-A program tgst prints single digit numbers 0-9
+A program that prints single digit numbers 0-9
+A C program that prints the lowercase alphabet in reverse
  
