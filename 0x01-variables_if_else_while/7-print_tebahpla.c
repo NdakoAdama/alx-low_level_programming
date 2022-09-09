@@ -18,7 +18,6 @@ int main(void)
 			putchar(i - 10 + 'A');
 		i++;
 		}
-	putchar(10);
 
 	return (0);
 }
