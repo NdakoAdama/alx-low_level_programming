@@ -9,4 +9,5 @@ A C program that prints the lowercase alphabet in reverse
 A C program that prints all the numbers of base 16
 A C program that prints all possible combinations of single-digit numbers
 A C program that prints all possible different combinations of two digits
+A C program that prints all possible combidations of 3 digits 
  
