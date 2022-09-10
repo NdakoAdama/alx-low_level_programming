@@ -7,6 +7,7 @@
  * Return: Always 0 (Success)
  */
 int main(void)
+int main(void)
 {
 	int d, p, q;
 
@@ -22,8 +23,8 @@ int main(void)
 					putchar(p);
 					putchar(q);
 
-	              if (d == '7' && p == '8')
-				continue;
+					if (d == '7' && p == '8')
+						continue;
 
 					putchar(',');
 					putchar(' ');
