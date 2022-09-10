@@ -8,26 +8,21 @@
  */
 int main(void)
 {
-	int d, p;
 
-	for (d = '0'; d < '9'; d++)
+	int i;
+
+	i = 48;
+
+	while (i < 58)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		putchar(i);
+		if (i != 57)
 		{
-			if (p != d)
-			{
-				putchar(d);
-				putchar(p);
-
-			if (d == '8' && p == '9')
-				continue;
-
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(44);
+			putchar(32);
 		}
+		i++;
 	}
-	putchar('\n');
 
-	return (0);
+	putchar(10);
 }
