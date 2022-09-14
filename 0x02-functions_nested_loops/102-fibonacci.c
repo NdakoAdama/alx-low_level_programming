@@ -1,33 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - prints the sum of all even Fibonacci numbers 
- * below 4,000,000
+ * main - Entry point
  *
- * Return: Always 0.
- */
+ * Description: prints the first 50 Fibonacci numbers
+ * starting with 1 and 2 folled by a new line
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-	long int total_sum, sum, first, second;
+	int count;
+	unsigned long fin1 = 0, fin2 = 1, sum;
 
-	total_sum = 0;
-	sum = 0;
-	first = 0;
-	second = 1;
-
-	while (sum < 4000000)
+	for (count = 0; count < 50; ++count)
 	{
-		sum = first + second;
-		if (sum % 2 == 0)
-		{
-			total_sum += sum;
-		}
-		first = second;
-		second = sum;
-	}
+		sum = fin1 + fin2;
+		printf("%lu", sum);
 
-	printf("%li\n", total_sum);
+		fin1 = fin2;
+		fin2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
+	}
 
 	return (0);
 }
