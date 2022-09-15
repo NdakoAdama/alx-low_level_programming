@@ -1,21 +1,62 @@
-#include <unistd.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 /**
-*_putchar - writes the character c to stdout
-*@c: The character to print
-*
-*Return: In success 1.
-*On error, -1 is returned, and errno is set appropriately.
-*/
-int _putchar(char c);
-void print_alphabet();
-void print_alphabet_x10();
-int _islower(int c);
-int _isalpha(int c);
-int print_sign(int n);
-int _abs(int n);
-int print_last_digit(int a);void jack_bauer();
-void times_table(void);
-int add(int j, int k);
-void print_to_98(int a);
-void print_times_table(int n);
+ * _isupper - determines uppercase or not
+ * @c: character to determine
+ * Return: true or false
+ */
+int _isupper(int c);
+/**
+ * _isdigit - checks if it is digit
+ * @c: character to check
+ *
+ * Return: returns boolean
+ */
+int _isdigit(int c);
+/**
+ * mul - multiplies stuff
+ * @a: integer to multiply
+ * @b: integer to multiply
+ * Return: gives result
+ */
+int mul(int a, int b);
+/**
+ * print_numbers - prints the numbers
+ *
+ */
+void print_numbers(void);
+/**
+ * print_most_numbers - prints the numbers
+ *
+ */
+void print_most_numbers(void);
+
+/**
+ * more_numbers - prints the numbers
+ *
+ */
+void more_numbers(void);
+/**
+ * print_line - prints a line
+ *
+ * @n: integer to print stuff                      */
+void print_line(int n);
+/**
+ * print_diagonal - prints diagonal                *
+ * @n: integer to see how many stupid lines
+ */
+void print_diagonal(int n);
+/**
+ * print_square - prints a square
+ *
+ * @size: prints the size of whatever
+ */
+void print_square(int size);
+/**
+ * print_triangle - prints triangle
+ * @size: size of triangle
+ */
+void print_triangle(int size);
+
+#endif
