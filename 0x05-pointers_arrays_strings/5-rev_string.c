@@ -18,6 +18,13 @@ int _strlen(char *s)
   return (i);
 }
 
+
+/**
+ * rev_string - reverses string in place, without printing it
+ *
+ * @s: string to reverse
+ * Return: void
+ */
 void rev_string(char *s)
 {
   int i, rev;
@@ -33,4 +40,3 @@ void rev_string(char *s)
       s[rev--] = a;
     }
 }
-
