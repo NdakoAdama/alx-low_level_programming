@@ -3,50 +3,43 @@
 #include "main.h"
 
 /**
-* argstostr - concatenate arguments.
-* @ac: arg counter.
-* @av: arg vector.
-* Return: pointer p.
+ * argstostr - concatenats all arguments of my program
+ * @ac: argument count
+ * @av: argument of size ac
+ * Return: double point to a new string or NULL otherwise
 */
+
 char *argstostr(int ac, char **av)
 {
-int i, a = 0, k = 0;
-int j;
-char *p;
+int i, j, k;
+int sumlen = 0;
+char *arg_concat;
+
 if (ac == 0 || av == NULL)
-return (0);
+return (NULL);
 for (i = 0; i < ac; i++)
 {
-a += _strlen(av[i]);
+for (j = 0; av[i][j] != '\0'; j++)
+sumlen++;
+sumlen++;
 }
-p = malloc(a + 1 + ac);
-if (p == NULL)
-return (0);
+sumlen++;
+arg_concat = malloc(sumlen *sizeof(char));
+if (arg_concat == NULL)
+{
+free(arg_concat);
+return (NULL);
+}
+k = 0;
 for (i = 0; i < ac; i++)
 {
-for (j = 0; j < (_strlen(av[i])); j++)
+for (j = 0; av[i][j] != '\0'; j++, k++)
 {
-p[k] = av[i][j];
+arg_concat[k] = av[i][j];
+}
+arg_concat[k] = '\n';
 k++;
 }
-p[k] = '\n';
-k++;
-}
-p[k] = '\0';
-return (p);
-}
-
-/**
-* _strlen - counts number of chars.
-* @ch: string.
-* Return: pointer i.
-*/
-
-int _strlen(char *ch)
-{
-int i = 0;
-while (ch[i])
-i++;
-return (i);
+return (arg_concat);
 }
 
