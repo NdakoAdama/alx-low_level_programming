@@ -7,13 +7,11 @@
  * @b: input.
  * Return: Output.
  */
+
 void *malloc_checked(unsigned int b)
 {
-	void *g = malloc(b);
-
-	if (g == NULL)
-	{
-		exit(98);
-	}
-	return (g);
+void *ptr = malloc(b);
+if (ptr == NULL)
+exit(98);
+return (ptr);
 }
