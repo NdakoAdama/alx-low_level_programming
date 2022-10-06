@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * malloc_checked - creates a fxn that allocates 
+ * malloc_checked - creates a fxn that allocates
  * memory using malloc
  * @b: input.
  * Return: Output.
